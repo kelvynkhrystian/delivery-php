@@ -1,0 +1,1 @@
+ALTER TABLE pedidos ADD COLUMN taxa_entrega DECIMAL(10,2) DEFAULT 0.00 AFTER total;

@@ -1,0 +1,85 @@
+:root {
+    --theme-color: var(--tema-cor, #9333EA); /* Cor roxa do Tailwind (purple-600) */
+}
+
+/* Botões primários */
+.bg-blue-500,
+.hover\:bg-blue-500:hover,
+.bg-blue-600,
+.hover\:bg-blue-600:hover {
+    background-color: var(--theme-color) !important;
+}
+
+/* Bordas */
+.border-blue-500,
+.hover\:border-blue-500:hover {
+    border-color: var(--theme-color) !important;
+}
+
+/* Textos */
+.text-theme-color {
+    color: var(--theme-color) !important;
+}
+
+.text-blue-500,
+.hover\:text-blue-500:hover,
+.text-blue-600,
+.hover\:text-blue-600:hover {
+    color: var(--theme-color) !important;
+}
+
+/* Focus rings */
+.focus\:ring-blue-500:focus,
+.focus\:border-blue-500:focus {
+    --tw-ring-color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+}
+
+/* Links ativos no menu */
+.menu-item.active {
+    color: var(--theme-color) !important;
+}
+
+/* Elementos de formulário */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    --tw-ring-color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+}
+
+/* Botões de ação */
+.btn-primary {
+    background-color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+}
+
+/* Progress bars e elementos de destaque */
+.progress-bar,
+.highlight {
+    background-color: var(--theme-color) !important;
+}
+
+/* Categorias */
+.categoria-btn {
+    border: 1px solid #e5e7eb;
+    background-color: white !important;
+    color: #374151 !important;
+}
+
+.categoria-btn:hover {
+    border-color: var(--theme-color);
+    color: var(--theme-color) !important;
+    background-color: white !important;
+}
+
+.categoria-btn.active {
+    background-color: var(--theme-color) !important;
+    color: white !important;
+    border-color: var(--theme-color) !important;
+}
+
+/* Botões de adicionar ao carrinho */
+.add-to-cart-btn {
+    background-color: var(--theme-color) !important;
+}

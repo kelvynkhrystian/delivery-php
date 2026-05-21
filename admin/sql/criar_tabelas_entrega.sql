@@ -1,0 +1,20 @@
+-- Criar tabela de bairros
+CREATE TABLE IF NOT EXISTS bairros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    valor DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    UNIQUE KEY unique_nome (nome)
+);
+
+-- Criar tabela de faixas de distância
+CREATE TABLE IF NOT EXISTS faixas_distancia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    inicio DECIMAL(10,2) NOT NULL,
+    fim DECIMAL(10,2) NOT NULL,
+    valor DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    UNIQUE KEY unique_faixa (inicio, fim)
+);

@@ -1,0 +1,8 @@
+ALTER DATABASE delivery_app CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+ALTER TABLE configuracoes CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE usuarios CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE categorias CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE produtos CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE pedidos CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE pedido_itens CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
